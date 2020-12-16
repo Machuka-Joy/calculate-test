@@ -15,7 +15,7 @@ def calculate(url):
 
         if detail['water_functioning'] == 'yes':
             number_functional +=1
-        else:
+        elif detail['water_point_condition'] == 'broken':
             value = 1
             for key in community_ranking:
              if key == community_name:
